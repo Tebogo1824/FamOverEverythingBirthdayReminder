@@ -78,7 +78,7 @@ function getBirthdayInfo(dateStr: string) {
   let barColor = 'bg-accent';
   
   if (daysRemaining === 0) {
-    status = 'Today! 🎊';
+    status = 'Today!';
     colorClass = 'bg-primary text-primary-foreground';
     barColor = 'bg-primary';
   } else if (daysRemaining > 30) {
@@ -95,9 +95,9 @@ function getBirthdayInfo(dateStr: string) {
 function WhatsAppButton({ birthday, daysRemaining, ageTurn }: { birthday: Birthday, daysRemaining: number, ageTurn: number }) {
   let text = '';
   if (daysRemaining === 0) {
-    text = `🎊 Happy ${ageTurn}th Birthday, ${birthday.name}! 🎊\n\n${birthday.message}\n\nLet's all wish them a wonderful day!`;
+    text = ` Happy ${ageTurn}th Birthday, ${birthday.name}! \n\n${birthday.message}\n\nLet's all wish them a wonderful day!`;
   } else {
-    text = `Hey family, just a reminder that ${birthday.name}'s ${ageTurn}th birthday is in ${daysRemaining} days! 🎂`;
+    text = `Hey family, just a reminder that ${birthday.name}'s ${ageTurn}th birthday is in ${daysRemaining} days! `;
   }
   
   const encodedText = encodeURIComponent(text);
@@ -196,7 +196,7 @@ export default function App() {
             
             {sortedBirthdays.length === 0 && (
               <div className="text-center py-16 px-4">
-                <div className="text-5xl mb-4 opacity-50">🎂</div>
+                <div className="text-5xl mb-4 opacity-50"></div>
                 <h3 className="font-serif text-xl font-bold mb-2">No birthdays yet</h3>
                 <p className="text-muted-foreground text-sm">Add your family members to start tracking and celebrating together.</p>
               </div>
