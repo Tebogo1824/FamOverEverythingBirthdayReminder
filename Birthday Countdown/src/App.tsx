@@ -134,7 +134,7 @@ export default function App() {
   });
 
   return (
-    <div className="min-h-screen max-w-md mx-auto bg-background relative overflow-hidden flex flex-col" style={{ boxShadow: 'rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px, rgba(0, 0, 0, 0.01) 0px 4px 4px 0px inset' }}>
+   <div className="min-h-screen max-w-md md:max-w-full mx-auto md:mx-0 bg-background relative overflow-hidden flex flex-col"
       
       {/* ─── Dashboard ───────────────────────────────────────────────────────── */}
       {view === 'dashboard' && (
